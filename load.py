@@ -39,6 +39,7 @@ while userSelect != 0:
 			databaseCreate.createFile()
 		elif userSelect == 2:
 			#edit database
+			print('test')
 		elif userSelect == 0:
 			print('\nThanks for playing')
 		else:
