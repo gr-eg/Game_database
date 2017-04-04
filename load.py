@@ -1,4 +1,4 @@
-''' Game database for owned games. '''
+''' A Game database to catalogue the games I own.'''
 
 
 #Loading file to select what the user does.
