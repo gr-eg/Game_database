@@ -42,6 +42,6 @@ while userSelect != 0:
 		elif userSelect == 0:
 			print('\nThanks for playing')
 		else:
-			print('\nSomething went wrong - error 01')
+			print('\nError 01')
 	else:
 		print('\nPlease choose a valid option')
