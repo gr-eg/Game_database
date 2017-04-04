@@ -1,4 +1,4 @@
-#Check if the file is there or not
+#Check if the file is there or not.
 import file_check_ex
 
 
@@ -17,3 +17,4 @@ def check_file(sqlite_file):
 			print('\nThere is a file here already, please try agian')
 		else:
 			pass
+	return sqlite_file

@@ -1,4 +1,4 @@
-def checking_file (sqlite_check):
+def checkingFile (sqlite_check):
 	""" Check to see if the file exsists. return 0 = no file - 1 = file if there """
 	try:
 		with open(sqlite_check) as file:
