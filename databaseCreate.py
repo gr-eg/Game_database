@@ -1,3 +1,5 @@
+'''To check and create a new database file.
+
 #Import section
 import fileCheckExistence
 
