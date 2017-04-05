@@ -11,6 +11,7 @@ def createFile ():
 		if sqliteFileLenght == 0:
 			sqliteFile = str(input('\nNo filename entered, please try again.\nPlease enter your new file name: ')).strip()
 			sqliteFileLenght = len(sqliteFile)
+			#add in file check
 		elif sqliteFileLenght > 0:
 			return sqliteFile
 		else:
