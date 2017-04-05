@@ -1,11 +1,13 @@
-def checkingFile (sqlite_check):
+#Check to see of the file is there or not
+
+def checkFile (sqliteCheck):
 	""" Check to see if the file exsists. return 0 = no file - 1 = file if there """
 	try:
-		with open(sqlite_check) as file:
-			file_ex_check = 1
+		with open(sqliteCheck) as file:
+			fileCheck = 1
 			# There is a file return the value 1
-			return file_ex_check
+			return fileCheck
 	except IOError as f:
-		file_ex_check = 0
+		fileCheck = 0
 		# There is no file, return the value 0 
-		return file_ex_check
+		return fileCheck
