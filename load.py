@@ -6,7 +6,7 @@
 
 #Import section 
 import intagerCheck #File to check and see if it is an intager
-import databaseCreate #Create the database
+import fileCreate #Create the database
 
 
 #Varibles set up
@@ -14,7 +14,7 @@ userSelect = None
 sqliteFile = ''
 userSelectOptions = [0,1]
 
-#Body of code#
+#Body of code
 
 #Welcome code
 print('\nGame database')
@@ -36,7 +36,7 @@ while userSelect != 0:
 	if userSelect in userSelectOptions:
 		if userSelect == 1:
 			#create database
-			createFile.fileName()
+			fileCreate.fileName()
 		elif userSelect == 2:
 			#edit database
 			print('test')
