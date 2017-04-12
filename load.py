@@ -36,7 +36,7 @@ while userSelect != 0:
 	if userSelect in userSelectOptions:
 		if userSelect == 1:
 			#create database
-			databaseCreate.createFile()
+			createFile.fileName()
 		elif userSelect == 2:
 			#edit database
 			print('test')
