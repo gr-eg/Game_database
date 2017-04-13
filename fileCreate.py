@@ -5,7 +5,7 @@
 import fileCheckExistence
 import databaseCreate
 
-def fileName ():
+def newFile ():
 	''''To check for a new file'''
 	sqliteFile = ''
 	sqliteFile = str(input('\nPlease enter your new file name: ')).strip()

@@ -36,7 +36,7 @@ while userSelect != 0:
 	if userSelect in userSelectOptions:
 		if userSelect == 1:
 			#create database
-			fileCreate.fileName()
+			fileCreate.newFile()
 		elif userSelect == 2:
 			#edit database
 			print('test')
@@ -45,4 +45,4 @@ while userSelect != 0:
 		else:
 			print('\nError 01')
 	else:
-		print('\nPlease choose a valid option')
+		print('\nInvalid option.')
