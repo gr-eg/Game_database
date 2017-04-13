@@ -8,6 +8,14 @@ def createDatabase(sqliteFile):
 		conn = sqlite3.connect(sqlite_file)
 		c = conn.cursor()
 		
+		# c.executescript to create lots of tables at once
+		c.execute('''
+		
+		CREATE TABLE games (id_game_main INTEGER PRIMARY KEY, title TEXT, description TEXT, 
+		
+		
+		''')
+		
 		
 	except:
 		#Roll back if fails
