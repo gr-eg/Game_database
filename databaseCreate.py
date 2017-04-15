@@ -17,7 +17,7 @@ def createDatabase(sqliteFile):
 		c.execute('''CREATE TABLE databaseVersion (version INTEGER PRIMARY KEY)''')
 		
 		#add preset values
-		c.execute('INSERT INTO databaseVersion VALUES(?)', databaseVersion.version)
+		c.execute('INSERT INTO databaseVersion VALUES(?)', databaseVersion.versionCreate)
 		
 		return 
 		
