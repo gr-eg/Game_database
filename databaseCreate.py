@@ -21,14 +21,11 @@ def createDatabase(sqliteFile):
 		c.execute('''CREATE TABLE databaseVersion (version INTEGER PRIMARY KEY)''')
 		
 		print('created table databaseversion')
-		DBversionNumber = databaseVersion.versionCreate()
-		print(DBversionNumber, ' not in function')
-		input('wait')
 		
 		#add preset values
-		c.execute('INSERT INTO databaseVersion VALUES(?)', DBversionNumber) # not working
+		c.execute('INSERT INTO databaseVersion VALUES(?)', databaseVersion.VersionCreate()) # not working
 		
-		print('inserted databaseversion')
+		print('inserted databaseVersion')
 		
 		conn.commit()
 		
