@@ -18,12 +18,15 @@ def createDatabase(sqliteFile):
 		print('created table games')
 		
 		#database version identifier 
-		c.execute('''CREATE TABLE databaseVersion (version INTEGER PRIMARY KEY)''')
+		c.execute('''CREATE TABLE databaseVersion (versionNumber INTEGER PRIMARY KEY)''')
 		
 		print('created table databaseversion')
 		
+		dbv = int(databaseVersion.versionCreate())
+		print(dbv)
+		
 		#add preset values
-		c.execute('INSERT INTO databaseVersion VALUES(?)', databaseVersion.VersionCreate()) # not working
+		c.execute('''INSERT INTO databaseVersion  VALUES(?)''', (dbv)) # not working
 		
 		print('inserted databaseVersion')
 		
