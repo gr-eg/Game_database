@@ -26,8 +26,8 @@ def createDatabase(sqliteFile):
 		print(dbv)
 		
 		#add preset values
-		c.execute('''INSERT INTO databaseVersion  VALUES(?)''', (dbv)) # not working
-		
+		c.execute('''INSERT INTO databaseVersion  VALUES(?)''', [dbv]) # not working
+
 		print('inserted databaseVersion')
 		
 		conn.commit()
